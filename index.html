@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- سياسة أمان المحتوى: لا سكربتات أو أنماط مضمّنة، ولا اتصال بأي خادم خارجي -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; manifest-src 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <title>عسل عُمان الأصيل | اطلب عسلك العماني</title>
+  <meta name="description" content="عسل عماني طبيعي 100% — سدر، سمر، برم، غاف وزهور جبلية. اطلب أونلاين مع التوصيل لجميع محافظات وولايات سلطنة عُمان.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">عسل عُمان <strong>الأصيل</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#products">منتجاتنا</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#order">اطلب الآن</a>
+        <a href="#contact">تواصل معنا</a>
+        <a href="#order" class="nav-cart">السلة <span class="cart-count" id="cartCountNav">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- القسم الرئيسي -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">من جبال وأودية عُمان إلى بيتك</p>
+          <h1>عسل عُماني طبيعي <span class="accent"><bdi dir="ltr">100%</bdi></span></h1>
+          <p class="lead">سدر، سمر، برم وغاف — يُجنى من مناحل عُمانية ويصلك إلى باب بيتك في أي محافظة أو ولاية أو قرية في السلطنة.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">تصفح المنتجات</a>
+            <a href="#" class="btn btn-whatsapp js-whatsapp-contact" target="_blank" rel="noopener noreferrer">
+              <span class="wa-icon" aria-hidden="true"></span> اطلب عبر واتساب
+            </a>
+          </div>
+          <ul class="hero-badges">
+            <li>✔ توصيل لجميع المحافظات</li>
+            <li>✔ الدفع عند الاستلام</li>
+            <li>✔ ضمان الجودة</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="honeycomb"></div>
+          <div class="jar jar-hero"><span class="jar-label">عسل<br>عُماني</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- المنتجات -->
+    <section class="section" id="products">
+      <div class="container">
+        <header class="section-head">
+          <h2>منتجاتنا</h2>
+          <p>اختر نوع العسل والحجم، ثم أضفه إلى السلة.</p>
+        </header>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- لماذا نحن -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <header class="section-head">
+          <h2>لماذا عسلنا؟</h2>
+        </header>
+        <div class="features">
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">🐝</div>
+            <h3>من مناحل عُمانية</h3>
+            <p>نتعامل مباشرة مع النحّالين في الجبل الأخضر وظفار والداخلية.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">🧪</div>
+            <h3>طبيعي وغير مغشوش</h3>
+            <p>بدون سكر مضاف أو تسخين، ويُحفظ بطريقة تحافظ على فوائده.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">🚚</div>
+            <h3>توصيل لكل السلطنة</h3>
+            <p>نوصل إلى جميع المحافظات والولايات والقرى حسب موقعك.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3>طلب آمن وخاص</h3>
+            <p>بياناتك لا تُخزَّن على أي خادم؛ تصلنا مباشرة عبر واتساب فقط.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج الطلب -->
+    <section class="section" id="order">
+      <div class="container order-layout">
+
+        <aside class="cart-panel" aria-labelledby="cartTitle">
+          <h2 id="cartTitle">سلة الطلب</h2>
+          <ul class="cart-list" id="cartList"></ul>
+          <p class="cart-empty" id="cartEmpty">السلة فارغة — أضف منتجاً من الأعلى.</p>
+          <div class="cart-total">
+            <span>الإجمالي</span>
+            <strong id="cartTotal">0.000 ر.ع.</strong>
+          </div>
+          <p class="cart-note">رسوم التوصيل تُحدَّد عند تأكيد الطلب حسب الولاية.</p>
+        </aside>
+
+        <form class="order-form" id="orderForm" novalidate autocomplete="on">
+          <h2>بيانات التوصيل</h2>
+
+          <!-- حقل فخ للروبوتات: يبقى فارغاً للمستخدم الحقيقي -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">لا تملأ هذا الحقل</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <fieldset>
+            <legend>معلومات العميل</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="customerName">الاسم الكامل <span class="req">*</span></label>
+                <input type="text" id="customerName" name="customerName" maxlength="60" autocomplete="name" required>
+                <small class="error" data-for="customerName"></small>
+              </div>
+              <div class="field">
+                <label for="customerPhone">رقم الهاتف <span class="req">*</span></label>
+                <div class="phone-input">
+                  <span class="phone-prefix">968+</span>
+                  <input type="tel" id="customerPhone" name="customerPhone" maxlength="15" inputmode="numeric" autocomplete="tel-national" placeholder="9XXXXXXX" dir="ltr" required>
+                </div>
+                <small class="error" data-for="customerPhone"></small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>موقع التوصيل</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="governorate">المحافظة <span class="req">*</span></label>
+                <select id="governorate" name="governorate" required>
+                  <option value="">— اختر المحافظة —</option>
+                </select>
+                <small class="error" data-for="governorate"></small>
+              </div>
+              <div class="field">
+                <label for="wilayat">الولاية <span class="req">*</span></label>
+                <select id="wilayat" name="wilayat" required disabled>
+                  <option value="">— اختر المحافظة أولاً —</option>
+                </select>
+                <small class="error" data-for="wilayat"></small>
+              </div>
+            </div>
+            <div class="field">
+              <label for="village">القرية / المنطقة / الحي <span class="req">*</span></label>
+              <input type="text" id="village" name="village" maxlength="60" required>
+              <small class="error" data-for="village"></small>
+            </div>
+            <div class="field">
+              <label for="addressDetails">وصف مكان التوصيل</label>
+              <textarea id="addressDetails" name="addressDetails" rows="2" maxlength="200" placeholder="مثال: رقم المنزل، السكة، بجانب مسجد ..."></textarea>
+              <small class="error" data-for="addressDetails"></small>
+            </div>
+
+            <div class="location-box">
+              <div class="location-actions">
+                <button type="button" class="btn btn-outline" id="locateBtn">📍 حدّد موقعي الحالي</button>
+                <span class="location-status" id="locationStatus" role="status"></span>
+              </div>
+              <div class="field">
+                <label for="mapsLink">أو الصق رابط موقعك من خرائط Google</label>
+                <input type="url" id="mapsLink" name="mapsLink" maxlength="200" placeholder="https://maps.app.goo.gl/..." dir="ltr">
+                <small class="error" data-for="mapsLink"></small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>الدفع والملاحظات</legend>
+            <div class="radio-group" role="radiogroup" aria-label="طريقة الدفع">
+              <label class="radio"><input type="radio" name="payment" value="cod" checked> الدفع عند الاستلام</label>
+              <label class="radio"><input type="radio" name="payment" value="transfer"> تحويل بنكي</label>
+            </div>
+            <div class="field">
+              <label for="notes">ملاحظات إضافية</label>
+              <textarea id="notes" name="notes" rows="2" maxlength="300"></textarea>
+              <small class="error" data-for="notes"></small>
+            </div>
+          </fieldset>
+
+          <small class="error form-error" id="formError" role="alert"></small>
+
+          <button type="submit" class="btn btn-whatsapp btn-block" id="submitBtn">
+            <span class="wa-icon" aria-hidden="true"></span> إرسال الطلب عبر واتساب
+          </button>
+          <p class="form-hint">بالضغط على الزر سيُفتح واتساب برسالة جاهزة تحتوي تفاصيل طلبك — فقط اضغط إرسال.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- تأكيد الطلب -->
+    <section class="success-panel" id="successPanel" hidden aria-live="polite">
+      <div class="container success-inner">
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h2>تم تجهيز طلبك</h2>
+        <p>رقم الطلب: <strong id="orderIdOut"></strong></p>
+        <p>إذا لم يُفتح واتساب تلقائياً، اضغط الزر أدناه لإرسال الطلب.</p>
+        <a href="#" class="btn btn-whatsapp" id="successWaLink" target="_blank" rel="noopener noreferrer">
+          <span class="wa-icon" aria-hidden="true"></span> فتح واتساب وإرسال الطلب
+        </a>
+        <button type="button" class="btn btn-link" id="newOrderBtn">طلب جديد</button>
+      </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-inner">
+        <header class="section-head">
+          <h2>تواصل معنا</h2>
+          <p>لديك سؤال عن أنواع العسل أو طلبات الجملة والهدايا؟ راسلنا مباشرة.</p>
+        </header>
+        <a href="#" class="btn btn-whatsapp btn-lg js-whatsapp-contact" target="_blank" rel="noopener noreferrer">
+          <span class="wa-icon" aria-hidden="true"></span> راسلنا على واتساب
+        </a>
+        <p class="contact-number" id="contactNumber"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> عسل عُمان الأصيل — جميع الحقوق محفوظة.</p>
+      <p class="footer-small">بياناتك تُرسل مباشرة إلى واتساب ولا تُحفظ على أي خادم.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-whatsapp-contact" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
+    <span class="wa-icon" aria-hidden="true"></span>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/oman-locations.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/security.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
